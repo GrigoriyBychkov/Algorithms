@@ -23,18 +23,11 @@
 
 function matrix(n) {
     let s = ('    ').repeat(n * n);
-    for (let i = 0; i < n; i++) {
-        const lineM = [];
-        for (let j = 0; j < n; j++) {
-            lineM.push(0);
-        }
-        m.push(lineM);
-    }
     let r = 0;
     let c = -1;
     let reverse = false;
     let reduce = 0;
-    let number = 4;
+    let number = (n*n).toString().length + 1;
 
     for (let i = 1; i <= n*n; i++) {
 
@@ -70,6 +63,6 @@ function matrix(n) {
         let index = i * number * n;
         s = s.substr(0, index) + '\n' + s.substr(index + 1, s.length);
     }
+    console.log(s)
 }
-
 matrix(6);
