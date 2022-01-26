@@ -12,7 +12,6 @@ function intToRoman(x) {
         return false
     }
     let result = '';
-
     let romanMap = {
         M: 1000,
         C: 100,
@@ -23,7 +22,6 @@ function intToRoman(x) {
     }
 
     for (let i in romanMap) {
-
         while (x >= romanMap[i]) {
             result += i;
             x -=  romanMap[i];
