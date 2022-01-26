@@ -30,7 +30,6 @@ function matrix(n) {
     let number = (n*n).toString().length + 1;
 
     for (let i = 1; i <= n*n; i++) {
-
         if (!reverse) {
             if (c < n - 1 - reduce) {
                 c++;
@@ -49,7 +48,6 @@ function matrix(n) {
             if (c === 0 + reduce  && r === 1 + reduce) {
                 reverse = false;
                 reduce += 1;
-
             }
         }
 
